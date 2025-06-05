@@ -24,7 +24,7 @@ export default function NewClientPage() {
                 name: form.name,
                 email: form.email,
                 budget: Number(form.budget),
-                status: form.status as any,
+                status: form.status as unknown as string,
             },
         });
         router.push('/clients');
