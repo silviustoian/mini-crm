@@ -12,7 +12,7 @@ export default function NewClientPage() {
         name: '',
         email: '',
         budget: '',
-        status: 'prospect',
+        status: '',
     });
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -24,7 +24,7 @@ export default function NewClientPage() {
                 name: form.name,
                 email: form.email,
                 budget: Number(form.budget),
-               
+                status: form.status,
             },
         });
         router.push('/clients');
